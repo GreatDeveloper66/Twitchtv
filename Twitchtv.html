@@ -1,74 +1,53 @@
 <html>
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="description" content="Page that allows you to search Wikipedia pages and produce random pages">
-  <meta name="keywords" content="Wikipedia, Free Code Camp, Articles, Search button">
-  <title>Wikipedia Viewer</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <meta name="author" content="greatdeveloper">
-
-  <!--Font Awesome-->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
-  <!--Links to Bootstrap-->
-  <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-  <!--Link to Google Fonts-->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
-
-
-  <!-- Latest compiled and minified JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-  <!--External Link to JQuery-->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-  <!--W3 CSS-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 </head>
 
 <body>
-  <div class="app-container">
+
+
+  <div class="container-fluid">
     <div class="row">
+      <div class="col-xs-12 col-md-6 col-md-offset-3">
 
-      <div class="col-xs-12 col-md-4 col-md-offset-5">
-        <div class="row">
-          <div class="page-header">
-            <h1>Twitch TV Live Streaming</h1>
+        <header class="w3-card w3-green">
+          <header class="w3-row">
+            <div class="page-header">
+              <h1>Twitch TV Live Streaming</h1>
+            </div>
+            <ul class="nav nav-tabs">
+              <li><a data-toggle="tab" href="#all">All</a></li>
+              <li><a data-toggle="tab" href="#online">Online</a></li>
+              <li><a data-toggle="tab" href="#offline">Offline</a></li>
+            </ul>
+          </header>
+
+
+          <div class="w3-row w3-green">
+            <div class="tab-content">
+              <div id="all" class="tab-pane fade">
+
+
+              </div>
+              <div id="online" class="tab-pane fade">
+
+              </div>
+              <div id="offline" class="tab-pane fade">
+
+
+              </div>
+            </div>
           </div>
-        </div>
-        <!--add Twitch TV menu buttons here-->
-       
-          
-<header class="w3-card w3-green">
-            <header class="w3-row">
-              <ul class="nav nav-tabs nav-justified">
-                <li><a data-toggle="tab" href="#menu1">All</a></li>
-                <li><a data-toggle="tab" href="#menu2">Online</a></li>
-                <li><a data-toggle="tab" href="#menu3">Offline</a></li>
-              </ul>
-  </header>
-
-            
-           <div class="w3-row w3-red">
-             <div class="tab-content">
-               <div id="menu1" class="tab-pane fade">
-                All channels
-               </div>
-               <div id="menu2" class="tab-pane fade">
-                 <p>Online right now</p>
-               </div>
-               <div id="menu3" class="tab-pane fade">
-                 <p>Offline channels</p>
-               </div>
-             </div>
-        </div>
-
-        </div>
       </div>
+    </div>
+  </div>
 
 
 </body>
